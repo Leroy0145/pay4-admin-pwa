@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Figma PWA">
-    <title>Pay4 Admin</title>
+    <meta name="apple-mobile-web-app-title" content="Pay4">
+    <title>Pay4</title>
+    <!-- Custom icons for your app -->
     <link rel="icon" href="icon-192x192.png">
     <link rel="apple-touch-icon" href="icon-192x192.png">
-    <meta http-equiv="refresh" content="0;url=https://www.figma.com/proto/p0f769WuY2RpXGvAIvfYnR/Pay4?node-id=0-1&t=j0oZEcqEtSIPbCvC-1">
+    <link rel="manifest" href="/manifest.json">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+    </style>
+    <script>
+        // Redirect after 5 seconds
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = 'https://www.figma.com/proto/p0f769WuY2RpXGvAIvfYnR/Pay4?node-id=0-1&t=j0oZEcqEtSIPbCvC-1';
+            }, 5000); // 5 seconds delay
+        };
+    </script>
 </head>
 <body>
-    <p>Redirecting to prototype...</p>
+    <div class="container">
+        <h1>Welcome to Pay4 Admin!</h1>
+        <p>Redirecting you to the Pay4 Admin prototype in 5 seconds...</p>
+    </div>
 </body>
 </html>
